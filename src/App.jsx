@@ -6,7 +6,7 @@ import images from "./Images";
 function ProductImage({ id, onExpand }) {
   return (
     <motion.img
-      src={images[0]}
+      src={images[id]}
       alt=""
       onClick={() => onExpand(id)}
       className="related-product-image"
@@ -31,7 +31,7 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <div className="container-main">
       <main className="primary-container">
         <AnimatePresence>
           <motion.img

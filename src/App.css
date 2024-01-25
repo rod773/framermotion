@@ -1,17 +1,17 @@
-.container {
+.container-main {
   font-family: sans-serif;
-  max-width: 1280px;
+  max-width: 100vw;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 620px;
+  height: 100vh;
   overflow: hidden;
 }
 
 .primary-container {
-  height: 620px;
-  min-width: 1070px;
+  height: 100vh;
+  min-width: 80%;
   border-radius: 1rem;
   position: relative;
 }
@@ -29,13 +29,15 @@
 .product-gallery {
   display: flex;
   flex-direction: column;
-  height: 620px;
+  width: 20%;
+  height: 100%;
   z-index: 1;
 }
 
 .related-product-image {
   border-radius: 10px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .product-gallery .related-product-image:first-child {
